@@ -125,7 +125,7 @@ body {
 .banner-description .banner-cta a {
     text-transform: uppercase;
 
-    background: #7077A1;
+    background: var(--medium-orange);
     color: var(--white);
     border-radius: 0.5rem   ;
     padding: 0.5rem;
@@ -135,7 +135,7 @@ body {
 }
 
 .banner-description .banner-cta a:hover {
-    background: var(--light-orange);
+    background: #7077A1;
 }
 .banner-description .banner-cta span {
     text-transform: uppercase;
