@@ -119,6 +119,7 @@ body {
 
 .banner-description  p {
     margin-bottom: 1rem;
+    text-align: justify; 
 }
 
 .banner-description .banner-cta a {
@@ -494,5 +495,86 @@ body {
         width: 98%;
     }
 }
+
+\\banner what is AI
+
+.banner {
+    position: relative;
+    padding: 60px 0;
+    background-color: #f9f9f9;
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.banner-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.banner-description {
+    flex: 1;
+}
+
+.banner-description h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.banner-description p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.banner-cta {
+    margin-top: 20px;
+}
+
+.banner-cta .call-to-action {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.banner-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px;
+}
+
+.banner-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .banner-content {
+        flex-direction: column;
+    }
+
+    .banner-image {
+        margin-top: 20px;
+        justify-content: center;
+    }
+}
+
 
 
