@@ -1,0 +1,113 @@
+:root {
+    /* colors */
+    --medium-orange: #F16718;
+    --light-orange: #FF9B62;
+    --black: #2D3250;
+    --medium-blue-gray: #222831;
+    --light-gray: #E8EFF2;
+    --white: #FFFFFF;
+
+    /* typograpghy */
+    --font-family: 'Barlow', sans-serif;
+    
+    --font-weight-medium: 500;
+    --font-weight-black: 900;
+    
+    --font-size-h1: 3.5rem;
+    --font-size-h2: 2rem;
+    --font-size-h3: 1.5rem;
+    --font-size-body: 1rem;
+    
+    --line-height-h1: 3.5rem;
+    --line-height-h2: 2.25rem;
+    --line-height-h3: 1.75rem;
+    --line-height-body: 1.625rem;
+    /* normal state */
+    --btn-normal-state-1:  var(--medium-orange);
+    --btn-normal-state-2: var(--light-gray); 
+    /* hover state */
+    --hover-state-1: var(--light-orange);
+    --hover-state-2: var(--black);
+}
+
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: var(--font-size-body);
+    font-weight: var(--font-weight-medium);
+    line-height: var(--line-height-body);
+    color: var(--medium-blue-gray);
+}
+
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+li, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+h1, h2, h3 {
+    text-transform: uppercase;
+    font-weight: var(--font-weight-black);
+    color: var(--black);
+}
+
+h1 {
+    font-size: var(--font-size-h1);
+    line-height: var(--line-height-h1);
+}
+
+
+h2 {
+    font-size: var(--font-size-h2);
+    line-height: var(--line-height-h2);
+}
+h3 {
+    font-size: var(--font-size-h3);
+    line-height: var(--line-height-h3);
+}
+
+
+.clear-both {
+    clear: both;
+    overflow: hidden;
+}
+
+@media(prefer-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}

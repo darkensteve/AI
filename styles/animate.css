@@ -1,0 +1,87 @@
+.banner-description h1.hidden {
+    transform: translateX(-50%);
+    opacity: 0;
+}
+
+.banner-description h1.show {
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+.banner-description p.hidden {
+    transform: translateX(20%);
+    opacity: 0;
+}       
+.banner-description p.show {
+    transform: translateX(0%);
+    opacity: 1;
+} 
+
+.banner-image.hidden {
+    opacity: 0;
+    transform: scale(1.1);
+}
+
+.banner-image.show {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.banner-description .banner-cta.hidden {
+    opacity: 0;
+    transform: scale(0);
+}
+
+.banner-description .banner-cta.show {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.banner-content.show::after {
+    transform: translateX(0);
+
+}
+
+@keyframes rolling {
+    0% {
+        transform: translateX(100%);
+        transform: rotate(45deg);
+    }
+    
+    100% {
+        transform: translateX(0%);
+        transform: rotate(45deg);
+    }
+}
+
+picture.hidden {
+    opacity: 0;
+    transform: translateX(-30%);
+}
+picture.show {
+    opacity: 1;
+    transform: translateX(0%);
+}
+
+.product-description.hidden {
+    opacity: 0;
+    transform: scale(0);
+}
+.product-description.show {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.features.hidden {
+    opacity: 0;
+    transform: translateX(-20%);
+}
+
+.features.show {
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+.about-product-content.show::before {
+    transform: translateX(0);
+}
